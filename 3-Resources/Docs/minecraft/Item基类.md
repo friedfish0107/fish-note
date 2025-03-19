@@ -4,7 +4,7 @@
 
 来源：`net.minecraft.world.item`
 
-注：forge修改了mc的代码，关于其他更改部分见[[更改的原版内容]]
+注：forge修改了mc的代码，关于其他更改部分见[更改的原版内容](/1-Areas/Programming/Forge-Modding/更改的原版内容.md)
 
 ## 逐段解析
 
@@ -35,7 +35,7 @@ ItemLike {
     private final FeatureFlagSet requiredFeatures;
 ```
 
-1. ### [[implements|继承接口]]
+1. ### [继承接口](../../../1-Areas/Programming/java/implements.md)
 
    ```java
    public class Item
@@ -52,7 +52,7 @@ ItemLike {
    ```
 
    - **作用**：用于记录物品相关日志
-   - **技术细节**：`LogUtils.getLogger()`是minecraft封装的日志工具，见[[LogUtils]]
+   - **技术细节**：`LogUtils.getLogger()`是minecraft封装的日志工具，见[LogUtils](LogUtils.md)
   
 3. ### 方块与物品的映射表
 
@@ -71,7 +71,7 @@ ItemLike {
     protected static final UUID BASE_ATTACK_SPEED_UUID = UUID.fromString("FA233E1C-4180-4865-B01B-BCCE9785ACA3");
    ```
 
-   - **作用**：唯一标识武器的基础攻击伤害和攻击速度属性修饰符。例如，剑类物品会通过这两个[[UUID]]添加默认属性。
+   - **作用**：唯一标识武器的基础攻击伤害和攻击速度属性修饰符。例如，剑类物品会通过这两个[UUID](UUID.md)添加默认属性。
    - **例子**：钻石剑的`+7攻击伤害`和`1.6攻击速度`即通过此UUID绑定。
 
 5. ### 物品堆叠与交互常量
@@ -516,7 +516,7 @@ ItemLike {
    - **作用**：
    - **技术细节**：
 
-### 三，[[builder类.md|建造者类]]Properties
+### 三，[建造者类](../../../1-Areas/Programming/java/builder类.md)Properties
 
 ```java
     public Item(Properties properties) {

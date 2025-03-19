@@ -2,7 +2,7 @@
 
 >最后更新：2025-03-09 23:35
 
-在 Minecraft Forge 中，物品和方块的注册是通过 [[DeferredRegister]] 机制实现的，这是一种基于事件驱动的延迟注册方式。以下是其详细执行流程：
+在 Minecraft Forge 中，物品和方块的注册是通过 [DeferredRegister][def] 机制实现的，这是一种基于事件驱动的延迟注册方式。以下是其详细执行流程：
 
 ---
 
@@ -27,7 +27,7 @@
    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block", () -> new Block(...));
    ```
 
-3. **将注册容器绑定到[[Programming/Forge-Modding/事件总线|事件总线]]**
+3. **将注册容器绑定到[事件总线](事件总线)**
    * 在 Mod 主类的构造函数中，将 DeferredRegister 实例（如 ITEMS 和 BLOCKS）添加到 Forge 的事件总线。
 
    * **关键代码**：
@@ -78,7 +78,7 @@
       public ExampleMod() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus()); // 绑定到事件总线
       }
-   }kv
+   }
    ```
 
 1. 游戏启动时，Forge 加载 Mod。
@@ -91,3 +91,5 @@
 
 >未完成部分  
 >如果需要更深入理解，可以研究 Forge 的 RegistryEvent 和 IForgeRegistry 相关源码（例如 net.minecraftforge.registries 包）。这是 Forge 注册机制的核心部分！
+
+[def]: /3-Resources/Docs/forge/deferredregister.md
