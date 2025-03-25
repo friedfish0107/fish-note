@@ -28,7 +28,7 @@
     4. `energy` ：当前能量
 - 方法：
     1. `int` `receiveEnergy(int maxReceive, boolean simulate)`：增加能量，`maxReceive` 为本次传输值(实际会受自身限制和剩余容量等改变)`simulate` 为是否为模拟结果(不实际传输，但有返回值)，返回本次传输的能量
-    2. `int` `extractEnergy(int maxExtract, boolean simulate)`增加能量，参数如上
+    2. `int` `extractEnergy(int maxExtract, boolean simulate)`提取能量，参数如上
     3. `int` `getEnergyStored()`：获取当前能量
     4. `int` `getMaxEnergyStored()`：获取最大容量
     5. `boolean` `canExtract()`：判断是否能消耗(最大消耗量>0)
