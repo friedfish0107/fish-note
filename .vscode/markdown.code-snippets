@@ -26,5 +26,17 @@
 	"毒队": {
 		"prefix": "蓝笃",
 		"body": "蓝笃焚风，平衡分${1:24.80}，$3结算分${2:32.43}，无敌了~，无敌了~"
-	}
+	},
+	"mermaid": {
+		"prefix": "mermaid",
+		"body": "```mermaid\n$0\n```"
+	},
+	"minecraft": {
+		"prefix": "minecraft",
+		"body": "minecraft"
+	},
+	"needlink": {
+		"prefix": "nlink",
+		"body": "<!--LINK:${1:需要链接}-->$0"
+	},
 }
