@@ -1,0 +1,31 @@
+[
+    {
+        "rawtext": [
+            {
+                "text": "§b红队:"
+            },
+            {
+                "selector": "@a[tag=red]"
+            },
+            {
+                "text": "§b蓝队:"
+            },
+            {
+                "selector": "@a[tag=blue]"
+            }
+        ]
+    },
+    {
+        "rawtext": [
+            {
+                "text": "§g"
+            },
+            {
+                "selector": "@p[y=-51]"
+            },
+            {
+                "text": " 选择了职业:§2坦克"
+            }
+        ]
+    }
+]
