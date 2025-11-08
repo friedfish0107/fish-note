@@ -29,3 +29,4 @@
 |              | AnimationJS                 | 使用kubejs配置玩家动画                  |
 |              | KubeJS Ars Nouveau          | 使用kubejs配置新生魔艺配方              |
 | 数据包传送门 | Datapack Portals            | 使用数据包自定义传送门                  |
+| 大型矿床     | Large Ore Deposits          | 自定义大范围矿脉                        |
